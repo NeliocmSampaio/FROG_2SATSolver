@@ -2,13 +2,13 @@
 
 //#include "Graph.h"
 //#include "Solver.cc"
-#include "Frog.h"
+#include "Frog2.h"
 
 using namespace std;
 
 int main()
 {
-	Solver S;
+	S s;
 	//Tclause c;
 
 	/*c.vars.push_back(1);
@@ -24,11 +24,11 @@ int main()
 	S.addClause( &c );
 	c.vars.clear();*/
 
-	S.read();
-	S.print();
+	s.read();
+	//s.print();
 
 	printf("\n");
-	printf( S.solve() ? "Satisfiable\n" : "Not Satisfiable\n");
+	printf( s.solve() ? "Satisfiable\n" : "Not Satisfiable\n");
 
 	/*int n;
 	printf( "vertices number: " );
